@@ -1,3 +1,15 @@
+/* ==UserStyle==
+@name Mastodon One Column
+@namespace github.com/NecroTechno/config_files/tree/master/css/mastodon
+@homepageURL https://github.com/NecroTechno/config_files/tree/master/css/mastodon
+@version 1.0.0
+@updateURL https://rawgit.com/NecroTechno/config_files/master/css/mastodon/mastodon.user.css
+@description Mastodon one column theme
+@author NecroTechno
+@license https://creativecommons.org/licenses/by-nc/4.0/
+==/UserStyle== */
+
+@-moz-document domain("mastodon.social") {
 /**
 * Author : Mandar
 * Contact : Webmaster@eunivers.net
@@ -10,10 +22,6 @@
 /**
 * Minor edits by : NecroTechno
 **/
-
-@namespace url(http://www.w3.org/1999/xhtml);
-
-@-moz-document domain("mastodon.social") {
 
 /* Colour Variable Definitions */
 :root {
@@ -135,5 +143,4 @@ button.icon-button.active i.fa-retweet:after { animation: spin 0.5s linear; }
 
 /* Search Tab Fix */
 a.tabs-bar__link:nth-child(3) {display: none;}
-
 }
