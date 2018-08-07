@@ -1,0 +1,139 @@
+/**
+* Author : Mandar
+* Contact : Webmaster@eunivers.net
+* Instance : https://eunivers.social
+* StyleSheets overload for Mastodon v1.3.x add your instance on top
+* Licence CC by NC - https://creativecommons.org/licenses/by-nc/4.0/
+* have fun.
+**/
+  
+/**
+* Minor edits by : NecroTechno
+**/
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("mastodon.social") {
+
+/* Colour Variable Definitions */
+:root {
+  --main-colour: rgba(102, 17, 65,1);
+  --main-colour-transparent: rgba(102, 17, 65,0.8);
+  --main-colour-transparent-2: rgba(102, 17, 65,0.6);
+  --main-colour-transparent-3: rgba(102, 17, 65,0.4);
+  --secondary-colour: rgba(170, 85, 133,1);
+  --tertiary-colour: rgba(205, 136, 175,1);
+  --tertiary-colour-transparent: rgba(205, 136, 175,0.8);
+}
+
+/* One Column */
+@media (min-width: 1024px) {
+	.tabs-bar {display: flex;}
+	/* .tabs-bar > a:first-child {display: none;} */
+	.columns-area {width: calc(50% + 300px); margin: auto;}
+	.column {display: none;}
+	.column:last-child {display: flex; min-width: 600px;}
+}
+
+/* Color */
+.tabs-bar {background: rgba(255, 255, 255, 0.9);}
+.tabs-bar__link {color: #333;}
+.tabs-bar__link:hover, .tabs-bar__link:focus, .tabs-bar__link:active {background: var(--main-colour-transparent);}
+.tabs-bar__link.active {background: var(--main-colour-transparent); color: #fff; border-bottom: 2px solid #fff;}
+
+/* Setting */
+body.admin {background: rgba(10, 65, 100,1);}
+.admin-wrapper .sidebar-wrapper {background: rgba(0, 0, 0,0.2);}
+.admin-wrapper .sidebar ul a.selected {background:  rgba(184, 38, 1,0.25)}
+
+/* All */
+.about-body .actions .info a, .about-body p a, .about-body li a {color: rgba(111, 178, 226,1)}
+.about-body .actions .info a:hover, .about-body p a:hover, .about-body li a:hover {color: rgba(255,255,255,1);}
+.webapp-btn {display: block; width: 100%; border: 0 none; border-radius: 4px; background: var(--tertiary-colour-transparent); color: rgba(255,255,255,1) !important; font-size: 18px; padding: 10px; text-transform: uppercase; text-decoration: none; text-align: center; box-sizing: border-box; margin-bottom: 0.5rem;}
+.webapp-btn:hover {background: var(--tertiary-colour);}
+.simple_form button, .simple_form .block-button {margin-bottom: 2rem;}
+.screenshot-with-signup .simple_form, .screenshot-with-signup .closed-registrations-message {width: 50%; min-width: 300px;}
+.focusable:focus {background: var(--main-colour-transparent-3)}
+
+/* Fil */
+body.app-body, body.about-body {background: rgba(10, 65, 100,1) url(https://www.toptal.com/designers/subtlepatterns/patterns/spiration-dark.png) repeat 0 0; background-attachment: fixed;}
+.ui {background: rgba(49, 53, 67, 0.5)}
+.column > .scrollable, .empty-column-indicator {background:rgba(255,255,255,1); border-radius: 0 0 0.25rem 0.25rem; color: rgba(51, 51, 51,1);}
+/* .column-header__buttons {height: 100%;} */
+.column-back-button {background: rgba(240, 240, 240,1); box-shadow: inset 0 5px 5px rgba(0,0,0,0.05); border-bottom: 1px solid transparent;}
+.column-header {background: var(--main-colour); border-bottom: 1px solid #ccc; border-radius: 0.25rem 0.25rem 0 0}
+.column-icon, .collapsable-collapsed {background: transparent !important; color: rgba(255,255,255,1);}
+.column-header__back-button, .column-header__button {background: rgba(225, 225, 225,1); color: var(--main-colour)}
+.column-back-button {color: var(--main-colour)}
+.column-header__button.active, .column-header__button.active:hover, .column-header__collapsible > div {background: rgba(10, 65, 100,1)}
+.muted .status__content a, .muted .status__content p, .muted .status__display-name strong {color: rgba(10, 65, 100,0.5);}
+.column-link {background: rgba(240, 240, 240,1); border-bottom: 1px solid #ccc; color: rgba(51, 51, 51,1); box-shadow: inset 0 5px 5px rgba(0,0,0,0.05);}
+.column-link:hover {background: rgba(200,222,243,0.5); color: rgba(255,255,255,1);}
+.drawer__header a:hover {background: var(--main-colour-transparent-2);}
+.getting-started {background: url(https://eunivers.social/system/media_attachments/files/mastodon-getting-started.png) no-repeat 0 100% local;background-color:var(--main-colour)}
+.column-subheading {background: rgba(255,255,255,1);}
+
+/* Status */
+.status, .account {border-bottom: 1px solid #ccc;}
+.status__display-name strong, .account__display-name strong {color: rgba(49,53,67,1);}
+.status__content a, .reply-indicator__content a {color: var(--main-colour);}
+.status__content .status__content__spoiler-link, .reply-indicator__content .status__content__spoiler-link {background: rgba(49,53,67,1); line-height: 1.2rem;}
+.status__content__spoiler-link span {color: rgba(255, 255, 255,1);}
+.account__header {background: rgba(10, 65, 100,1);}
+.account__header > div {background: rgba(10, 65, 100,0.5);}
+.account__header .icon-button, .account__action-bar .icon-button {color: rgba(255,255,255,0.8);}
+.account__header .icon-button:hover, .account__action-bar .icon-button:hover {color: rgba(255,255,255,1);}
+.account__action-bar {background: rgba(10, 65, 100,1); border-top: 1px solid rgba(255,255,255,0.25); border-bottom: 1px solid rgba(255,255,255,0.25);}
+.account__action-bar__tab {border-left: 1px solid rgba(255,255,255,0.25);}
+.notification__message a:hover {color:var(--main-colour);}
+.detailed-status {background: rgba(200,222,243,0.5); color: rgba(51,51,51,1);}
+.detailed-status__display-name, .detailed-status__meta {color: rgba(0,0,0,0.5);}
+.detailed-status__display-name strong {color: rgba(0, 0, 0,1);}
+.detailed-status__action-bar {background:rgba(0, 0, 0,0.05); border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; box-shadow: inset 0 5px 5px rgba(0,0,0,0.05);}
+.getting-started p {color: rgba(102, 102, 102,1);}
+.notification {background: rgba(200,222,243,0.15);}
+.status.status-direct {background: var(--main-colour-transparent-3);}
+
+/* Status Button & drawer */
+.icon-button.active {color: var(--main-colour);}
+button.icon-button i.fa-retweet {background: none transparent;}
+button.icon-button i.fa-retweet:after {height: 19px; width: 22px; content: "\f079"; display: block;}
+.scrollable .status .icon-button, .drawer__inner .icon-button.inverted, .drawer__inner .text-icon-button {color: var(--main-colour-transparent-2);}
+.scrollable .status .icon-button:hover, .drawer__inner .icon-button.inverted:hover, .drawer__inner .text-icon-button:hover {color: rgba(184, 38, 1,0.4);}
+.scrollable .status .icon-button.star-icon.active, .notification__favourite-icon-wrapper .star-icon, button.icon-button.active i.fa-retweet {color: rgba(250, 180, 0, 1);}
+button.icon-button.active i.fa-retweet:after { animation: spin 0.5s linear; }
+@keyframes spin {from {transform:rotate(0deg);} to {transform:rotate(360deg);}}
+.button {background-color: var(--main-colour)}
+.button:active, .button:focus, .button:hover {background-color: var(--secondary-colour);}
+
+/* Drawer */
+.drawer__header {background: transparent;}
+.search__input {background: rgba(255, 255, 255, 1);}
+.drawer__inner {border: 1px solid #e6ecf0; background: rgba(255, 255, 255, 0.9); box-shadow: inset 0 5px 5px rgba(0,0,0,0.05); color: #333; border-radius: 0.25rem; height: auto; overflow: visible;}
+.navigation-bar strong {font-size: 1rem; color: rgba(49,53,67,1);margin-bottom: 4px;}
+.compose-form__buttons {background: transparent; box-shadow: none;}
+.drawer__inner.darker, .search-results__header {background: rgba(255, 255, 255, 1);}
+.drawer__inner.darker .account:hover {background: rgba(184, 38, 1,0.05);}
+
+/* About */
+.about-body em {background:rgba(255,255,255,0.8);}
+.about-body .wrapper {background:rgba(49, 53, 67, 0.5); color:rgba(255,255,255,0.8); max-width: 800px !important; padding: 1rem; margin-top:50px;}
+.sidebar-layout .panel .panel-header {background: rgba(111, 178, 226,0.5);}
+.sidebar-layout .sidebar {border-left:1px solid rgba(111, 178, 226,0.5)}
+
+/* Status Card */
+.status-card {background-color: var(--main-colour);}
+.status-card:hover {background-color: var(--secondary-colour);}
+.status-card__description, .status-card__title {color: #FFF;}
+.status-card__host {color: #9baec8;}
+	
+/* Scroll Bar */
+::-webkit-scrollbar-thumb {background:#999;}
+::-webkit-scrollbar-thumb:hover {background:rgba(255,255,255,0.6)}
+::-webkit-scrollbar:hover {background:rgba(0,0,0,0)}
+::-webkit-scrollbar:hover {background:rgba(0,0,0,0)}
+
+/* Search Tab Fix */
+a.tabs-bar__link:nth-child(3) {display: none;}
+
+}

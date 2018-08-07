@@ -7,7 +7,7 @@
 ### Theme ###
 #############
 
-font xft:Source Sans Pro 10
+font xft:Inconsolata 10
 
 set $FOCUS #deded6
 set $UNFOCUS #2b3135
@@ -230,7 +230,7 @@ bar {
         status_command i3status
         strip_workspace_numbers yes
 	position top
-	font pango: Source Sans Pro, FontAwesome 10
+	font pango: Inconsolata, FontAwesome 10
 	colors {
 		background #121417
 		statusline #deded6
@@ -242,4 +242,5 @@ bar {
 		urgent_workspace #cd546c #ef545f #eddcd3
 	}
 }
+
 
