@@ -62,7 +62,7 @@ body.admin {background: rgba(10, 65, 100,1);}
 .simple_form button, .simple_form .block-button {margin-bottom: 2rem;}
 .screenshot-with-signup .simple_form, .screenshot-with-signup .closed-registrations-message {width: 50%; min-width: 300px;}
 .focusable:focus {background: var(--main-colour-transparent-3)}
-.focusable:focus .detailed-status, .focusable:focus .detailed-status__action-bar {background: transparent;} // fix for focus on selected status
+.focusable:focus .detailed-status, .focusable:focus .detailed-status__action-bar {background: transparent;} /* fix for focus on selected status */
 
 /* Fil */
 body.app-body, body.about-body {background: rgba(10, 65, 100,1) url(https://www.toptal.com/designers/subtlepatterns/patterns/spiration-dark.png) repeat 0 0; background-attachment: fixed;}
