@@ -1,28 +1,4 @@
-/* ==UserStyle==
-@name Mastodon One Column
-@namespace github.com/NecroTechno/config_files/tree/master/css/mastodon
-@homepageURL https://github.com/NecroTechno/config_files/tree/master/css/mastodon
-@version 1.0.0
-@updateURL https://cdn.jsdelivr.net/gh/NecroTechno/config_files/css/mastodon/mastodon.user.css
-@description Mastodon one column theme
-@author NecroTechno
-@license https://creativecommons.org/licenses/by-nc/4.0/
-==/UserStyle== */
-
 @-moz-document domain("mastodon.social") {
-/**
-* Author : Mandar
-* Contact : Webmaster@eunivers.net
-* Instance : https://eunivers.social
-* StyleSheets overload for Mastodon v1.3.x add your instance on top
-* Licence CC by NC - https://creativecommons.org/licenses/by-nc/4.0/
-* have fun.
-**/
-  
-/**
-* Minor edits by : NecroTechno
-**/
-
 /* Colour Variable Definitions */
 :root {
   --main-colour: rgba(102, 17, 65,1);
@@ -33,26 +9,6 @@
   --tertiary-colour: rgba(205, 136, 175,1);
   --tertiary-colour-transparent: rgba(205, 136, 175,0.8);
 }
-
-/* One Column */
-@media (min-width: 1024px) {
-	.tabs-bar {display: flex;}
-	/* .tabs-bar > a:first-child {display: none;} */
-	.columns-area {width: calc(50% + 300px); margin: auto;}
-	.column {display: none;}
-	.column:last-child {display: flex; min-width: 600px;}
-}
-
-/* Color */
-.tabs-bar {background: rgba(255, 255, 255, 0.9);}
-.tabs-bar__link {color: #333;}
-.tabs-bar__link:hover, .tabs-bar__link:focus, .tabs-bar__link:active {background: var(--main-colour-transparent);}
-.tabs-bar__link.active {background: var(--main-colour-transparent); color: #fff; border-bottom: 2px solid #fff;}
-
-/* Setting */
-body.admin {background: rgba(10, 65, 100,1);}
-.admin-wrapper .sidebar-wrapper {background: rgba(0, 0, 0,0.2);}
-.admin-wrapper .sidebar ul a.selected {background:  rgba(184, 38, 1,0.25)}
 
 /* All */
 .about-body .actions .info a, .about-body p a, .about-body li a {color: rgba(111, 178, 226,1)}
@@ -120,6 +76,7 @@ button.icon-button.active i.fa-retweet:after { animation: spin 0.5s linear; }
 .drawer__header {background: transparent;}
 .search__input {background: rgba(255, 255, 255, 1);}
 .drawer__inner {border: 1px solid #e6ecf0; background: rgba(255, 255, 255, 0.9); box-shadow: inset 0 5px 5px rgba(0,0,0,0.05); color: #333; border-radius: 0.25rem; height: auto; overflow: visible;}
+.navigation-bar {border: 1px solid #e6ecf0; background: rgba(255, 255, 255, 0.9); box-shadow: inset 0 5px 5px rgba(0,0,0,0.05); color: #333; border-radius: 0.25rem; height: auto; overflow: visible;}
 .navigation-bar strong {font-size: 1rem; color: rgba(49,53,67,1);margin-bottom: 4px;}
 .compose-form__buttons {background: transparent; box-shadow: none;}
 .drawer__inner.darker, .search-results__header {background: rgba(255, 255, 255, 1);}
