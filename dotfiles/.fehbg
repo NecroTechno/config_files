@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --bg-scale '/home/necrotechno/Pictures/convenience_store_girl_bg_1920x1080.jpg' 

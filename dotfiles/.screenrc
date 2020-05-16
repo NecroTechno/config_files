@@ -1,0 +1,9 @@
+split -v
+focus right
+split
+focus left
+screen -t bash
+focus right
+screen -t bash
+focus down
+screen -t bash
