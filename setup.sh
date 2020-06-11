@@ -21,7 +21,7 @@ fi
 
 # Install vital programs
 echo ""
-sudo apt-get update && sudo apt-get -y install rxvt-unicode screen weechat feh curl pcmanfm curl openvpn
+sudo apt-get update && sudo apt-get -y install rxvt-unicode screen weechat feh curl pcmanfm curl openvpn tmux
 
 echo -e "\nEverything has been setup! Have fun ;)\n"
 

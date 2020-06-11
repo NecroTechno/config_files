@@ -15,6 +15,8 @@ URxvt.urlButton: 1
 URxvt.underlineURLs: True
 
 ! Keybindings
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
 URxvt.keysym.Mod4-c: perl:clipboard:copy
 URxvt.keysym.Mod4-v: perl:clipboard:paste
 URxvt.keysym.Mod4-C-v: perl:clipboard:paste_escaped
@@ -26,8 +28,8 @@ URxvt.keysym.KP_Home: \033[1~
 URxvt.keysym.KP_End:  \033[4~
 
 ! Transparency
-URxvt.depth: 32
-URxvt.background: rgba:1111/1111/1111/dddd
+! URxvt.depth: 32
+! URxvt.background: rgba:26/41/55/dddd
 
 ! Fonts
 
@@ -41,41 +43,24 @@ URxvt.letterSpace: -1
 
 ! Colours
 
-! special
-*.foreground:   #e1bcc8
-*.background:   #161219
-*.cursorColor:  #c7c7c7
-
-! black
-*.color0:       #1d2c47
-*.color8:       #1d2c47
-
-! red
-*.color1:       #d2275a
-*.color9:       #ff2f6d
-
-! green
-*.color2:       #8752ba
-*.color10:      #b66efb
-
-! yellow
-*.color3:       #e15581
-*.color11:      #fb5f90
-
-! blue
-*.color4:       #1e59aa
-*.color12:      #2c84fc
-
-! magenta
-*.color5:       #8752ba
-*.color13:      #b56efa
-
-! cyan
-*.color6:       #4b76b8
-*.color14:      #67a2fd
-
-! white
-*.color7:       #e95986
-*.color15:      #fb89ad
-
-
+*color0: #495c65
+*color1: #f7cac9
+*color2: #9fa19c
+*color3: #e0cbd4
+*color4: #91a8cf
+*color5: #8b85a5
+*color6: #c1cfcf
+*color7: #c9d3de
+*color8: #485c64
+*color9: #d9b1b1
+*color10: #c1beb7
+*color11: #af9ea5
+*color12: #677793
+*color13: #656178
+*color14: #858f8f
+*color15: #e4e9ec
+*background: #292827
+*foreground: #e4e9ec
+*cursorColor: #c7c7c7
+*highlightTextColor: #000000
+*highlightColor: #c1ddff
